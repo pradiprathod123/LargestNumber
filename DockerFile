@@ -1,0 +1,5 @@
+from openjdk:12-alpine
+copy . /app
+workdir /app
+run javac SumOfLargestNumber.java
+CMD ["java", "SumOfLargestNumber"]
